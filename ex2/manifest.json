@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Comments Exporter",
+  "version": "1.0",
+  "description": "Scrape comments from a YouTube video page and export them as JSON.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+    }
+  },
+  "icons": {
+    "48": "icon48.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
